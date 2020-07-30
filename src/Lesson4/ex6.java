@@ -1,5 +1,5 @@
 //Напишите программу вывода всех четных чисел от 2 до 100 включительно
-public class ex_6 {
+public class ex6 {
     public static void main(String[] args){
         int a=2;
         while(a<=100){
