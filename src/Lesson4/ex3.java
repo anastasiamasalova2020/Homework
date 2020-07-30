@@ -1,5 +1,5 @@
 //Вычислить: 1+2+4+8+...+256
-public class ex_3 {
+public class ex3 {
     public static void main(String[] args){
         int i=1;
         int sum=0;
