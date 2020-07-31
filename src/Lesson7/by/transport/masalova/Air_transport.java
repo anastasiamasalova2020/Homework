@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 // - Размах крыльев (м)
 // - Минимальная длина взлётно-посадочной полосы для взлёта
 public abstract class Air_transport extends Transport {

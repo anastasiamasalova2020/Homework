@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 //- Наличие системы катапультирования (true/false)
 // - Кол-во ракет на борту

@@ -1,4 +1,4 @@
-package by.teachmeskills.robot.hands;
+package Lesson7.by.teachmeskills.robot.hands;
 
 public class ToshibaHands implements IHand {
     private int price;

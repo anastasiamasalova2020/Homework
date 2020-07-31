@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 //- Количество колёс
 //- Расход топлива(л/100км)

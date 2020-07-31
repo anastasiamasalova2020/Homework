@@ -1,8 +1,9 @@
-package by.teachmeskills.robot;
+package Lesson7.by.teachmeskills.robot;
 
-import by.teachmeskills.robot.legs.*;
-import by.teachmeskills.robot.hands.*;
-import by.teachmeskills.robot.heads.*;
+import Lesson7.by.teachmeskills.robot.legs.ILeg;
+import Lesson7.by.teachmeskills.robot.legs.*;
+import Lesson7.by.teachmeskills.robot.hands.*;
+import Lesson7.by.teachmeskills.robot.heads.*;
 
 public class Runner_robot {
     public static void main(String[] args) {

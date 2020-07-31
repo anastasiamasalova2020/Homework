@@ -1,4 +1,4 @@
-package by.cards.plastic.masalova;
+package Lesson7.by.cards.plastic.masalova;
 
 //Создать иерархию классов, описывающих банковские карточки.Иерархия должна иметь хотя бы три уровня.
 public class Runner_cards {

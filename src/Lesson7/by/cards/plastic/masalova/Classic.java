@@ -1,4 +1,4 @@
-package by.cards.plastic.masalova;
+package Lesson7.by.cards.plastic.masalova;
 
 //то же, что и у electron + удаленное бронирование
 public class Classic extends Electron {

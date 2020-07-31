@@ -1,4 +1,4 @@
-package by.clothes.masalova;
+package Lesson7.by.clothes.masalova;
 
 public class Human {
     private String name;

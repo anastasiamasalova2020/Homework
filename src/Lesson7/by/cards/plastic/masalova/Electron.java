@@ -1,4 +1,4 @@
-package by.cards.plastic.masalova;
+package Lesson7.by.cards.plastic.masalova;
 
 public class Electron {
     private String bankname;

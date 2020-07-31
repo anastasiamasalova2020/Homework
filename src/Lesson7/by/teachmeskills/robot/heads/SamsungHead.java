@@ -1,4 +1,4 @@
-package by.teachmeskills.robot.heads;
+package Lesson7.by.teachmeskills.robot.heads;
 
 public class SamsungHead implements IHead {
     private int price;

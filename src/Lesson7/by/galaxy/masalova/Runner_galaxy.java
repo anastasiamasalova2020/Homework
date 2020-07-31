@@ -1,4 +1,4 @@
-package by.galaxy.masalova;
+package Lesson7.by.galaxy.masalova;
 
 public class Runner_galaxy {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 // - Мощность(в лошадиных силах)
 // - Максимальная скорость(км/ч)

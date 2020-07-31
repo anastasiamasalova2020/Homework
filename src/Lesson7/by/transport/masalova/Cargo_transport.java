@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 public class Cargo_transport extends Land_transport {
     private double payloadcapacity;

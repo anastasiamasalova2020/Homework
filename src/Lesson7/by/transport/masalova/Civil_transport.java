@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 // - Кол-во пассажиров
 // - Наличие бизнес класса (true/false)

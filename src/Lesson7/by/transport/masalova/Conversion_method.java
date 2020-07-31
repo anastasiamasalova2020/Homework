@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 public class Conversion_method {
     public static double Conversion_method(double power) {

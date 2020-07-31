@@ -1,4 +1,4 @@
-package by.transport.masalova;
+package Lesson7.by.transport.masalova;
 
 public class Runner_transport {
     public static void main(String[] args) {

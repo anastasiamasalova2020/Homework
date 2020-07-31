@@ -1,4 +1,4 @@
-package by.household.equipment.masalova;
+package Lesson7.by.household.equipment.masalova;
 
 public class Microwave {
     private Brand brand;
