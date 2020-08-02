@@ -1,4 +1,4 @@
-package Lesson8.by.arrays.masalova;
+package Lesson9.by.arrays.masalova;
 
 //Написать класс, который умеет хранить в себе массив любых типов данных (int, long
 //etc.). Реализовать метод get(int index), который возвращает любой элемент

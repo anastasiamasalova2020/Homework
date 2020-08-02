@@ -1,4 +1,4 @@
-package Lesson8.by.arrays.masalova;
+package Lesson9.by.arrays.masalova;
 
 import java.util.Scanner;
 
