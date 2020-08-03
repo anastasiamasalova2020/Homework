@@ -11,8 +11,8 @@ import java.lang.annotation.*;
 @Inherited
 public @interface Version {
 
-    double version();
+    double version();//обязательная
 
-    String code() default "null";
+    String code() default "null";//не обязательная
 
 }

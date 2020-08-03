@@ -8,11 +8,26 @@ package Lesson9.by.annotations.masalova;
 
 import Lesson9.by.annotations.masalova.Version;
 
+import java.util.Objects;
+
 @Version(version = 8.1, code = "New Launch")
 public class MyService {
     private double version;
     private String code;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyService service = (MyService) o;
+        return Double.compare(service.getVersion(), getVersion()) == 0 &&
+                getCode().equals(service.getCode());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVersion(), getCode());
+    }
 
     private void thisClassInfo() {
         System.out.println("Номер версии=" + getVersion() + ", кодовое слово-" + getCode());

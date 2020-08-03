@@ -15,10 +15,12 @@ public class ArrayRunner {
         for (Integer integer : arr1) {
             System.out.print(integer + "\t");
         }
-        Scanner scanner = new Scanner(System.in);
         System.out.println("\nВведите индекс элемента из массива №1, который хотите получить: ");
+        Scanner scanner = new Scanner(System.in);
         int index1 = scanner.nextInt();
         System.out.println("arr1[" + index1 + "]=" + array1.getMember(index1));
+
+
         System.out.println("Ваш массив №2: ");
         for (String s : arr2) {
             System.out.print(s);
@@ -26,6 +28,7 @@ public class ArrayRunner {
         System.out.println("\nВведите индекс элемента из массива №2, который хотите получить: ");
         int index2 = scanner.nextInt();
         System.out.println("arr2[" + index2 + "]=" + array2.getMember(index2));
+
 
         System.out.println("Ваш массив №3: ");
         for (Double d : arr3) {
