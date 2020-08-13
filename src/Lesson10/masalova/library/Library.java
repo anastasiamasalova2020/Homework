@@ -14,22 +14,21 @@ import java.util.*;
 public class Library {
     protected static List<Book> library;
 
-    public Library() {
+    public Library() {//начальная библиотека(чтобы не была пустой)
         library = new ArrayList<>();
         Book AroundTheWord = new Book(1001, "Вокруг света за 80 дней", "Приключения");
         Book HarryPotter = new Book(1002, "Гарри Поттер", "Фэнтази");
         Book MonteCrista = new Book(1003, "Граф Монте Криста", "Приключения");
-        Book WarAndPeace = new Book(1004, "Война и мир","Роман");
-        Book DeadSouls = new Book(1006, "Мёртвые души", "Поэма");
-
+        Book WarAndPeace = new Book(1004, "Война и мир", "Роман");
+        Book DeadSouls = new Book(1005, "Мёртвые души", "Поэма");
+        library.add(AroundTheWord);
         library.add(HarryPotter);
         library.add(MonteCrista);
         library.add(WarAndPeace);
         library.add(DeadSouls);
-        library.add(AroundTheWord);
     }
 
-    public boolean add(Book book) {//добавление книги
+    public void add(Book book) {//добавление книги
         int k = 0;
         for (Book value : library) {
             if (value.getId() == book.getId()) {
@@ -39,11 +38,9 @@ public class Library {
         }
         if (k == 0) {
             library.add(book);
-            System.out.println("Книга успешно добавлена.");
-            return true;
+            System.out.println("Книга успешно добавлена. Ваша новая книга: "+book.toString());
         } else {
             System.out.println("ОШИБКА: книга не может быть добавленна, потому что книга с таким ID уже есть!");
-            return false;
         }
     }
 
@@ -54,7 +51,7 @@ public class Library {
 
     public void remove(int id) {//удаление книги
         int k = -1;
-        for (int i = 0; i < library.size(); i++) {
+        for (int i = 0; i < library.size(); i++) {//тут можно было вынести цикл в отдельный метод, т к он встречается в redactor(но сделала как в задании)
 
             if (library.get(i).getId() == id) {
                 k = i;
@@ -63,7 +60,7 @@ public class Library {
         }
         if (k != -1) {
             library.remove(library.get(k));
-            System.out.println("Книга успешно удалена.");
+            System.out.println("Книга успешно удалена. Вы удалили книгу: "+library.get(k).toString());
         } else {
             System.out.println("ОШИБКА: книги с таким ID не существует в библиотеке ");
         }
@@ -77,7 +74,7 @@ public class Library {
                 k = 1;
                 value.setTitle(new_title);
                 value.setGenre(new_genre);
-                System.out.println("Книга успешно отредактирована. Ваша книга: "+value.toString());
+                System.out.println("Книга успешно отредактирована. Ваша отредактированная книга: " + value.toString());
             }
         }
         if (k == 0) {

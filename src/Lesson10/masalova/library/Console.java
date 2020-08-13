@@ -1,7 +1,6 @@
 package Lesson10.masalova.library;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Scanner;
 //• Выберите действие:
 //
@@ -35,10 +34,11 @@ public class Console {
     private int result = 1;
 
     public void choice() {
-
+        sc.nextLine();
         int ch = 0;
         while (ch != 1) {
             System.out.println("Выберите действие:\na) вывод всех книг и их сортировка\nб) добавление книги\nв) удаление книги\nг) редактирование книги\nд) выход");
+            System.out.println("Введите только букву Вашего выбора:");
             String choice = sc.nextLine();
             switch (choice) {
                 case "а" -> {
@@ -65,8 +65,8 @@ public class Console {
                 }
                 default -> System.out.println("ОШИБКА: Вы ввели неверную букву, проверте язык(должен быть русский) и регистр.");
             }
-            sc.nextLine();
         }
+
     }
 
     public void sortBy() {
@@ -110,12 +110,11 @@ public class Console {
         System.out.print("Жанр:");
         String genre = sc.nextLine();
         Book book = new Book(id, title, genre);
-        System.out.println("Ваша новая книга: " + book.toString());
         bookShelf.add(book);
     }
 
     public void removeBook() {
-        System.out.println("Вы выбрали опцию-удаление книги из библиотеку.\nВведите id книги, которую Вы хотите удалить:");
+        System.out.println("Вы выбрали опцию-удаление книги из библиотеки.\nВведите id книги, которую Вы хотите удалить:");
         int id = sc.nextInt();
         bookShelf.remove(id);
     }
@@ -136,7 +135,7 @@ public class Console {
         int ch = 0;
         boolean result = false;
         while (ch != 1) {
-            System.out.println("Вы действительно хотите выйти из библиотеки? Введите + либо - ");
+            System.out.println("Вы действительно хотите выйти из библиотеки? Введите + (хотите выйти) либо - (не хотите выйти) ");
             String choice = sc.nextLine();
             switch (choice) {
                 case "+" -> {
@@ -144,9 +143,7 @@ public class Console {
                     ch = 1;
                     System.out.println("Спасибо за посещение!");
                 }
-                case "-" -> {
-                    ch = 1;
-                }
+                case "-" -> ch = 1;
 
                 default -> System.out.println("ОШИБКА: Вы верный знак");
             }
@@ -155,8 +152,9 @@ public class Console {
     }
 
     public void start() {
-        do {
+        do {System.out.println("Нажмите ENTER, чтобы продолжить.");
             choice();
+
         } while (getResult() != 0);
         System.exit(0);
     }

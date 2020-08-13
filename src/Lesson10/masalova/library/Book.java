@@ -43,7 +43,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Книга{ Название-" + getTitle() + ", жанр-" + getGenre() + ", ID=" + getId() + "}";
+        return "Книга{ Название - " + getTitle() + ", жанр-" + getGenre() + ", ID=" + getId() + "}";
     }
 
 }
