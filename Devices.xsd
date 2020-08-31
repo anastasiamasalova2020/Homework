@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="devices">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="device"  minOccurs="1" maxOccurs="unbounded " >
+
+                <xs:complexType>
+
+                    <xs:sequence>
+                        <xs:element name="Name" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="100"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+
+                        </xs:element>
+                        <xs:element name="Origin">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="40"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Price">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:int">
+                                    <xs:maxInclusive value="1000"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Type">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="screen"/>
+                                    <xs:enumeration value="music speakers"/>
+                                    <xs:enumeration value="hard drive"/>
+                                    <xs:enumeration value="accumulator"/>
+                                    <xs:enumeration value="controller"/>
+                                    <xs:enumeration value="motherboard"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Properties">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="IfPeripheral">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:boolean"/>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="Energy">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:float">
+                                                <xs:maxInclusive value="1500.0"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="IfCooler">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:boolean"/>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="Group">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="input/output"/>
+                                                <xs:enumeration value="multimedia"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="Port">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="COM"/>
+                                                <xs:enumeration value="USB"/>
+                                                <xs:enumeration value="LPT"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="IfCritical">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:boolean"/>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+</xs:schema>
