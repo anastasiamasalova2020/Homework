@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+    <device id="n905">
+        <Name>Samsung S24F350FHI</Name>
+        <Origin>China</Origin>
+        <Price>500</Price>
+        <Type>screen</Type>
+        <Properties>
+            <IfPeripheral>false</IfPeripheral>
+            <Energy>920.7</Energy>
+            <IfCooler>false</IfCooler>
+            <Group>input/output</Group>
+            <Port>USB</Port>
+        </Properties>
+        <IfCritical>true</IfCritical>
+    </device>
+</devices>
